@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+    background-color: #151E21;
+    }
+
+.portada{
+    display: flex;
+    align-items: center;
+    width: 100vm;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.427) 20%, #151E21 90%),url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center calc(20%);
+    background-size: cover;
+    overflow: hidden;
+    }
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 0 7vw;
+    font-family: serif;
+    font-size: 110px;
+    color: #86a4ae;
+    border-right: 4px solid aliceblue;
+    }
+
+.sub {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 7vw;
+    margin-top: -80px;
+    font-family: serif;
+    font-size: 40px;
+    color: #86a4ae;
+    }
+
+/* biografia */
+
+.biografia {
+    position: relative;
+    padding: 10px 0;
+    background-color: #151E21;
+    }
+
+.contenedor-bio {
+    min-height: 300px;
+    padding: 0 7vw;
+    }
+
+.text-bio {
+    color: aliceblue;
+    line-height: 20px;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(240, 248, 255, 0.426);
+    }
+
+/* discografia */
+
+.discografia {
+    height: 850px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0;
+    background-color: #151E21;
+    }
+
+.titulo-discografia, .titulo-biografia {
+    padding: 0 7vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    color: aliceblue;
+    }
+
+.contenedor-discografia {
+    padding: 0 7vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    }
+
+.contenedor-discografia::-webkit-scrollbar {
+    display: none;
+    }
+
+.disc-card {
+    flex: 0 0 auto;
+    width: 350px;
+    height: 800px;
+    margin-right: 20px;
+    }
+
+.disc-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 5px;
+    }
+
+.disc-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+.disc-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    color: aliceblue;
+    }
+
+.name-album {
+  text-transform: uppercase;
+    }
+
+.name-canciones {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+    }
+
+li {
+    letter-spacing: 2px;
+    }
+    
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #151E21 100%);
+    cursor: pointer;
+    z-index: 8;
+    }
+
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+    }   
+
+.nxt-btn {
+    right: 0;
+    }
+
+.pre-btn img,
+.nxt-btn img {
+    opacity: 0.6;
+    filter: invert(1);
+    }
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1;
+    }
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    opacity: 0.5;
+    text-transform: capitalize;
+    padding: 8px 0;
+    color: aliceblue;
+    border-top: 1px solid rgba(240, 248, 255, 0.396);
+    }
+
+@media (max-width: 600px){
+    
+    .titulo {
+        font-size: 35px;
+        }
+    
+    .sub {
+        margin-top: -25px;
+        font-size: 20px;
+        }
+
+    /* biografia */
+
+    .biografia {
+        padding: 10px 0;
+        }
+
+    .contenedor-bio {
+        min-height: 300px;
+        text-align: justify;
+        }
+
+    /* discografia */
+
+    .discografia {
+        width: 100vm;
+        height: 660px;
+        }
+
+    .titulo-discografia, .titulo-biografia {
+        padding: 0 10vw;
+        font-size: 25px;
+        margin-bottom: 20px;
+        }
+
+    .contenedor-discografia {
+        padding: 0 12vw;
+        display: flex;
+        overflow-x: scroll;
+        }
+
+    .disc-card {
+        width: 318px;
+        height: 690px;
+        margin-right: 5px;
+        }
+
+    .disc-image {
+        width: 230px;
+        height: 230px;
+        }
+
+    .disc-info {
+        width: 100%;
+        height: 450px;
+        padding-top: 10px;
+        }
+
+    .name-album {
+        font-size: 18px;
+        }
+    
+    .name-album sub {
+        font-size: 12px;
+        }
+    
+    .name-canciones {
+        line-height: 18px;
+        font-size: 12px;
+        }
+
+    li {
+        letter-spacing: 1px;
+        }
+
+    .copyright {
+        text-align: center;
+        font-size: 11px;
+        padding: 9px 0;
+        }
+}
+
+@media (max-width: 991px) and (max-height:321px){
+    
+    .titulo {
+        width: 100%;
+        padding: 0 3vw;
+        font-size: 35px;
+        }
+    
+    .sub {
+        margin-top: -25px;
+        font-size: 20px;
+        }
+
+    /* biografia */
+
+    .biografia {
+        padding: 10px 0;
+        }
+
+    .contenedor-bio {
+        min-height: 300px;
+        text-align: justify;
+        }
+
+    .text-bio {
+        font-size: 14px;
+        }
+
+    /* discografia */
+
+    .discografia {
+        width: 100vm;
+        height: 580px;
+        }
+
+    .titulo-discografia, .titulo-biografia {
+        padding: 0 7vw;
+        font-size: 22px;
+        margin-bottom: 20px;
+        }
+
+    .contenedor-discografia {
+        padding: 0 9vw;
+        display: flex;
+        }
+
+    .disc-card {
+        width: 220px;
+        height: 640px;
+        margin-right: 5px;
+        }
+
+    .disc-image {
+        width: 180px;
+        height: 165px;
+        }
+
+    .disc-info {
+        width: 100%;
+        height: 450px;
+        padding-top: 10px;
+        }
+
+    .name-album {
+        font-size: 14px;
+        }
+    
+    .name-album sub {
+        font-size: 10px;
+        }
+    
+    .name-canciones {
+        line-height: 17px;
+        font-size: 12px;
+        }
+
+    li {
+        letter-spacing: 1px;
+        }
+
+    .copyright {
+        text-align: center;
+        font-size: 12px;
+        }
+    }
